@@ -10,6 +10,7 @@ use yii\base\Widget;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
+use yii\web\View;
 
 /**
  * HighCharts widget renders a HighCharts JS chart
