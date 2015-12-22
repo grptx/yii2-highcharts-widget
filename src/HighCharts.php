@@ -117,6 +117,7 @@ class HighCharts extends Widget
 
         $options = Json::encode($options);
 
-        $view->registerJs(";var highChart_{$id} = new Highcharts.Chart({$options});");
+        $view->registerJs(";var highChart_{$id}",View::POS_HEAD);
+        $view->registerJs(";highChart_{$id} = new Highcharts.Chart({$options});");
     }
 }
